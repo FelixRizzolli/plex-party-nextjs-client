@@ -17,18 +17,25 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-slate-950;
 }
 
-.title {
-  @apply font-mono;
-  @apply font-black;
-  @apply text-9xl;
-  @apply underline;
+.main-card {
+  @apply bg-slate-800 py-10 rounded-lg;
+
+  h2 {
+    @apply text-4xl font-bold tracking-tight text-white sm:text-6xl underline;
+  }
+
+  p {
+    @apply mt-6 text-lg leading-8 text-gray-300;
+  }
+
+  > div {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+
+    > div {
+      @apply mx-auto max-w-2xl lg:mx-0;
+    }
+  }
 }
