@@ -1,0 +1,15 @@
+.btn {
+  /* Spacing */
+  @apply rounded px-2 py-1;
+
+  /* Colors */
+  @apply bg-indigo-500 text-white;
+
+
+  /* Typography */
+  @apply text-xl font-semibold shadow-sm;
+
+  /* Hover, Focus, and Other States */
+  @apply hover:bg-indigo-400;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500;
+}

@@ -20,6 +20,10 @@ body {
   @apply bg-slate-950;
 }
 
+.header {
+  @apply m-4 p-4 bg-slate-800 rounded-lg flex flex-row-reverse;
+}
+
 .main-card {
   @apply bg-slate-800 py-10 rounded-lg;
 
